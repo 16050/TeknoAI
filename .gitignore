@@ -1,0 +1,54 @@
+# =============================================
+#   ENVIRONNEMENT ET SECRETS
+# =============================================
+.env
+*.env.local
+# On garde l'exemple versionné pour référence
+!.env.example
+
+# =============================================
+#   PYTHON
+# =============================================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+
+# =============================================
+#   NODE / FRONT (optionnel)
+# =============================================
+node_modules/
+dist/
+.build/
+
+# =============================================
+#   ÉDITEURS / OS
+# =============================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# =============================================
+#   DONNÉES / GROS FICHIERS
+# =============================================
+# Ne pas versionner les fichiers PDF et données lourdes
+data/raw/**
+!data/raw/.gitkeep
+
+# Ne pas versionner les embeddings et uploads (résultats intermédiaires)
+processed/embeddings/**
+processed/uploads/**
+!processed/embeddings/.gitkeep
+!processed/uploads/.gitkeep
+
+# =============================================
+#   CACHES ET FICHIERS TEMPORAIRES
+# =============================================
+.cache/
+.mypy_cache/
+.pytest_cache/

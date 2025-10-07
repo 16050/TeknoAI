@@ -1,0 +1,55 @@
+- id: wallonie-eau-code
+  title: "Code de l’Eau coordonné"
+  authority: "Région wallonne"
+  type: "Code coordonné"
+  jurisdiction: "wallonie"
+  topic: "eau"
+  status: "en_vigueur"
+  file: "data/raw/Code_de_l_Eau_coordonne.pdf"
+  namespace: "wallonie_eau"
+
+- id: wallonie-eau-code-2
+  title: "Code de l’Eau coordonné (version 2)"
+  authority: "Région wallonne"
+  type: "Code coordonné"
+  jurisdiction: "wallonie"
+  topic: "eau"
+  status: "en_vigueur"
+  file: "data/raw/Code_de_l_Eau_coordonne_2.pdf"
+  namespace: "wallonie_eau"
+
+- id: wallonie-env-livre1-reglementaire
+  title: "Code de l’environnement — Livre I — Partie réglementaire"
+  authority: "Région wallonne"
+  type: "Partie réglementaire"
+  jurisdiction: "wallonie"
+  topic: "environnement"
+  file: "data/raw/Code_de_lenvironnement_Livre_I_Partie_Reglementaire.pdf"
+  namespace: "wallonie_environment_regl"
+
+- id: wallonie-env-livre1-decretale
+  title: "Code de l’environnement — Livre I — Partie décrétale"
+  authority: "Région wallonne"
+  type: "Partie décrétale"
+  jurisdiction: "wallonie"
+  topic: "environnement"
+  file: "data/raw/Code_de_lenvironnement_Livre_I_Partie_Decretale.pdf"
+  namespace: "wallonie_environment_decret"
+
+- id: be-sous-sol-code
+  title: "Décret instituant le Code de la gestion des ressources du sous-sol"
+  authority: "Région wallonne"        # ajuste si nécessaire
+  type: "Décret"
+  jurisdiction: "wallonie"
+  topic: "sous-sol"
+  file: "data/raw/Legislation_Decret_Code_gestion_ressources_sous_sol.pdf"
+  namespace: "subsoil"
+
+- id: moniteur-belge
+  title: "Moniteur belge (extraits)"
+  authority: "Fédéral"
+  type: "Moniteur"
+  jurisdiction: "belgique"
+  topic: "publication_officielle"
+  file: "data/raw/Moniteur_belge.pdf"
+  namespace: "moniteur_belge"
