@@ -40,6 +40,8 @@ Thumbs.db
 data/raw/**
 !data/raw/.gitkeep
 
+docs/**
+
 # Ne pas versionner les embeddings et uploads (résultats intermédiaires)
 processed/embeddings/**
 processed/uploads/**
