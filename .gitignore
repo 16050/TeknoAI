@@ -54,3 +54,6 @@ processed/uploads/**
 .cache/
 .mypy_cache/
 .pytest_cache/
+pineconeKey.txt
+mistralKey.txt
+utils/local_embed.py
