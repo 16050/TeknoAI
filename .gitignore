@@ -57,3 +57,5 @@ processed/uploads/**
 pineconeKey.txt
 mistralKey.txt
 utils/local_embed.py
+utils/delete_pinecone
+utils/pinecone_delete.py

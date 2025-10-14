@@ -92,7 +92,6 @@ for i in range(0, len(data_to_embed), BATCH_SIZE):
             vec = {
                 "id": d["id"],
                 "values": e.tolist() if hasattr(e, "tolist") else list(e),
-                "text": d["text"],  # full text in cache
                 "source": d.get("source")
             }
             cached_vectors.append(vec)
@@ -110,16 +109,11 @@ MAX_META_LENGTH = 1000
 vectors_to_upload = []
 for vec in cached_vectors:
     if vec["id"] not in pinecone_ids:
-        text_preview = vec.get("text")  # for old-style vectors
-        if text_preview is None:
-            text_preview = vec.get("metadata", {}).get("text", "")
         source = vec.get("source") or vec.get("metadata", {}).get("source")
-
         vectors_to_upload.append({
             "id": vec["id"],
             "values": vec["values"],
             "metadata": {
-                "text_preview": text_preview[:MAX_META_LENGTH],
                 "source": source
             }
         })
